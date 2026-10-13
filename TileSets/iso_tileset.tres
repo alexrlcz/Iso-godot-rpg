@@ -2941,12 +2941,25 @@ texture_region_size = Vector2i(256, 256)
 34:79/0 = 0
 37:79/0 = 0
 38:79/0 = 0
+4:7/0 = 0
+4:8/0 = 0
+3:7/0 = 0
+7:7/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+8:7/0 = 0
+0:7/0 = 0
+0:8/0 = 0
+0:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+7:0/0 = 0
 
 [resource]
 resource_name = "iso_tileset.tres"
 tile_shape = 1
 tile_layout = 5
-tile_size = Vector2i(64, 32)
+tile_size = Vector2i(16, 8)
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_chmya")
 sources/2 = SubResource("TileSetAtlasSource_g8wti")
