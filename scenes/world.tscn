@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://ckhph5ancuho6"]
+
+[ext_resource type="Script" uid="uid://cbnlmfspw0an6" path="res://scenes/world.gd" id="1_nnsk1"]
+[ext_resource type="Script" uid="uid://b12sm43yjprbv" path="res://scenes/player.gd" id="2_rwgxs"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_rwgxs"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rwgxs"]
+
+[node name="World (Node2D)" type="Node2D" unique_id=32672163]
+script = ExtResource("1_nnsk1")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1998239038]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1116795107]
+position = Vector2(640, 360)
+script = ExtResource("2_rwgxs")
+
+[node name="Polygon2D" type="Polygon2D" parent="CharacterBody2D" unique_id=337123818]
+material = SubResource("CanvasItemMaterial_rwgxs")
+color = Color(0.57984483, 0.9999998, 0.76593816, 1)
+polygon = PackedVector2Array(0, -14, 8, -5, 8, 8, 0, 14, -8, 8, -8, -5)
+vertex_colors = PackedColorArray(4.3317677e-06, 0.9914308, 0.40831193, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=295054116]
+shape = SubResource("CircleShape2D_rwgxs")
+debug_color = Color(0, 0.86290103, 0.4171944, 0.41960785)
